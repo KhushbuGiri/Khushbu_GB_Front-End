@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./app.js"></script>
+</head>
+<body>  
+         
+    <div class="container" id="container">
+        <label class="txt">Features & Facilities <span class="addBox" onclick="openBox()">+</span>
+            <body>
+                <div class="container1" id="con">
+        
+                    <label class="tt"><b> Features & Facilities</b> </label>
+                        <p class="closeBox" onclick="closebox1()">X</p><br><br>
+        
+                    <label class="t1"><b> Mess </b> </label>
+                        <p class="mess1">Add details about the  service, food time table, Quality, etc</p>
+        
+                        <label class="t2"><b> Library </b> </label>
+                        <p class="lib1">Add details about the  service, food time table, Quality, etc</p>
+                    
+                        <label class="t3"><b> Laboratory </b> </label>
+                        <p class="lab1">Add details about the  service, food time table, Quality, etc</p>
+                    
+                        <label class="t4"><b> Gym </b> </label>
+                        <p class="gym1">Add details about the  service, food time table, Quality, etc</p> 
+                </div>
+        </label>
+        <div1 class="coed"  id="box">
+            <svg height="100" width="100">
+                <circle cx="47" cy="41" r="25" stroke="red" stroke-width="3" fill="white" /></svg>
+               <i class="fa fa fa-graduation-cap fa-2x"></i> 
+              <i class="fa fa-ellipsis-v"  onclick="edit()"></i> 
+            <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown ...
+            </p>
+            <div class="c1" id="con">
+                <label class="text1"><b> Edit </b> </label><br>
+                <label class="text2"><b> Remove </b> </label>
+            </div>
+
+             <h6>Co-Ed</h6>
+
+            <!-- <div class="desc"><span id="lib">Coed <b class="close">X</b> </span>
+                <input type="text" class="innerBox" placeholder="Description...">
+                 <button id="btn1">Cancel</button>
+                 <button id="btn2">Done</button>
+                
+             </div> -->
+
+        </div1>
+        
+        <div2 class="mess" id="box">
+            <svg height="100" width="100">
+                <circle cx="44" cy="44" r="25" stroke="red" stroke-width="3" fill="white" />  </svg>
+               <i class="fa fa-cutlery fa-2x"></i> 
+            
+              <i class="fa fa-ellipsis-v"></i> 
+            <p>
+                Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown ...
+
+            </p><h6>Mess</h6>
+            <div class="desc"><span id="lib">Mess <b class="close" onclick="descr()" >X</b> </span>
+                <input type="text" class="innerBox" placeholder="Description...">
+                 <button id="btn1" onclick="descr()">Cancel</button>
+                 <button id="btn2">Done</button></div>
+        </div2>
+        <div3 class="lab" id="box">
+            <svg height="100" width="100">
+                <circle cx="47" cy="44" r="25" stroke="red" stroke-width="3" fill="white" /> </svg>
+               <i class="fa fa-desktop fa-2x"></i> 
+             
+              <i class="fa fa-ellipsis-v" ></i> 
+            <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown ...
+            </p><h6>Lab</h6>
+            <!-- <div class="desc"><span id="lib">Lab <b class="close"  >X</b> </span>
+                <input type="text" class="innerBox" placeholder="Description...">
+                 <button id="btn1">Cancel</button>
+                 <button id="btn2">Done</button>
+             </div> -->
+        </div3>
+        <div4 class="library" id="box1">
+            <svg height="100" width="100">
+                <circle cx="44" cy="44" r="25" stroke="red" stroke-width="3" fill="white" /> </svg>
+               <i class="fa fa-book fa-2x"></i> 
+             
+              <i class="fa fa-ellipsis-v"></i> 
+            <p>Lorem ipsum, or lipsum as it is sometimes known, is dummy text used in laying out print, graphic or web designs. The passage is attributed to an unknown ...
+            </p><h6>Library</h6>
+                <!-- <div class="desc"><span id="lib">Mess <b class="close" onclick="descr()" >X</b> </span>
+               <input type="text" class="innerBox" placeholder="Description...">
+                <button id="btn1" onclick="descr()">Cancel</button>
+                <button id="btn2">Done</button></div> -->
+            
+        </div4> 
+    </div>
+</body>
+</html>
+<script>
+document.querySelector("#box1").addEventListener("click", function(){
+document.querySelector(".desc").style.display = "block";
+});
+
+// function descr(){
+//     document.querySelector("").style.display = "none";
+// }
+</script>
+
+
+
+
+
+
+<style>
+    .c1{
+        position: absolute;
+        width: 129px;
+        height: 77px;
+        left: 580px;
+        
+        top: 0;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+        border-radius: 7px;
+        display: none;
+    }
+    .text1{
+        text-align: center;
+        position: absolute;
+        width: 87px;
+        height: 16px;
+        left: 13%;
+        top: 20%;
+        padding-left: 10px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 16px;
+
+
+        display: flex;
+        align-items: center;
+
+        color: white;
+    }
+
+    .closeBox{
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bolder;
+      color: black;
+      font-size: 1rem;
+       margin-left: 75%;
+       margin-top: 2px;
+     
+    }
+    .text2{
+        
+        position: absolute;
+        width: 87px;
+        height: 16px;
+        left: 13%;
+        top: 60%;
+        padding-left: 10px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 16px;
+
+
+        display: flex;
+        align-items: center;
+
+        color: white;
+    }
+    .addBox{
+        cursor: pointer;
+    }
+
+    .container1{
+        position: absolute;
+        width: 500px;
+        height: 400px;
+        right: -450px;
+        top: 47px;
+        z-index: 1;
+        background: #FFFFFF;
+        display: none;
+        cursor: pointer;
+        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    }
+
+  
+
+    .tt{
+        position: absolute;
+        width: 224px;
+        height: 16px;
+        left: 5px;
+        top: 15px;
+        padding-left: 10px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 20px;
+        line-height: 16px;
+
+
+        display: flex;
+        align-items: center;
+        text-align: center;
+         color: white;
+
+
+
+    }
+    .t1{
+        position: absolute;
+        width: 87px;
+        height: 16px;
+        left: 5px;
+        top: 60px;
+        padding-left: 10px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 16px;
+
+        display: flex;
+        align-items: center;
+        color:white;
+   
+    }
+    .mess1{
+        
+        position: absolute;
+        width: 325px;
+        height: 32px;
+        left: 5px;
+        top: 70px;
+
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 16px;
+        color:white;
+    }
+    
+    .t2{
+        position: absolute;
+        width: 87px;
+        height: 0px;
+        left: 3px;
+        top: 135px;
+        padding-left: 10px;
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 16px;
+
+
+        display: flex;
+        align-items: center;
+
+        color:white;
+
+    }
+    .lib1{
+        position: absolute;
+        width: 304px;
+        height: 16px;
+        left: 4px;
+        top: 140px;
+
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 16px;
+        color: white;
+
+    }
+
+    .t3{
+        position: absolute;
+        width: 87px;
+        height: 16px;
+        left: 4px;
+        top: 190px;
+
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 16px;
+        padding-left: 10px;
+        
+        display: flex;
+        align-items: center;
+
+        color:white;
+
+    }
+    .lab1{
+        
+        position: absolute;
+        width: 304px;
+        height: 18px;
+        left: 4px;
+        top: 203px;
+
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 16px;
+
+        
+
+        color:white;
+
+    }
+
+    .t4{
+        position: absolute;
+        width: 87px;
+        height: 16px;
+        left: 4px;
+        top: 260px;
+
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 16px;
+
+        padding-left: 10px;
+        display: flex;
+        align-items: center;
+
+        color: white;
+
+    }
+    .gym1{
+        position: absolute;
+        width: 304px;
+        height: 16px;
+        left: 4px;
+        top: 275px;
+
+        font-family: Roboto;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 13px;
+        line-height: 16px;
+
+      
+
+        color: white;
+}
+
+</style>
+<script>
+function edit(){
+    document.querySelector(".c1").style.display = "block";
+}
+</script>
+
+<script>
+     function openBox(){
+        document.querySelector(".container1").style.display = "block";
+    }
+
+    function closebox1(){
+        document.querySelector(".container1").style.display = "none";
+    }
+</script>
